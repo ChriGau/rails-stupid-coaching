@@ -1,0 +1,24 @@
+<h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+
+<h2>Ask a question and get an answer from the coach</h2>
+<form action="/answer" method="get">
+  <input type="text" name="query" placeholder="What's your question?">
+  <input type="submit">
+</form>
+
+<%= params[:query] %>
+<br>
+-Me
+<br>
+<br>
+
+ <%= @answer %>
+ <br>
+ - Coach
+
+
+<h2> <%= link_to "Ask another question", ask_path %></h2>
+
+
+
